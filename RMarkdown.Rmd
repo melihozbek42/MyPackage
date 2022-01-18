@@ -1,0 +1,59 @@
+---
+title: "MyRPackage"
+author: "Melih Ozbek"
+date: "17 01 2022"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+
+# My R Package for MBG5035
+This R package contains three functions for final homework of MBG5035.
+
+## Introduction
+
+This package contains 3 functions as listed;
+1. String Duplication/Uniqueness Checker
+2. MissingNos
+3. Product of Others
+
+## Functions
+
+### String Duplication/Uniqueness Checker
+
+This function takes a string as input and checks if your string is unique or has duplicates. It is not a uppercase sensitive function because it lower cases the input string, then creates a table of repetitiveness of each character and prints the output.
+
+#### Example :)
+
+Any string can be given. For instance let's write "string" after running the `string_duplicated()` 
+
+
+[1] "Your string is unique!"
+
+### MissingNos Function
+
+This function finds the 2 randomly picked missing numbers. In a bag that contains 100 tiles with from 1 to 100 numbers written on them, 2 randomly, without looking inside tile are picked and discarded. The function finds the discarded 2 numbers and prints.
+
+#### Example :)
+
+You can just run the function `MissingNos()`
+
+[1] "Missing Nos are: "
+
+[1] 76 87
+
+### Product of Others Function
+
+If you supply a number of integers to the function, it will give the output that each number will be multiplied with all numbers except the number itself.
+
+#### Example :)
+
+product = c(1,2,3)
+
+`Product_Others(product)`
+
+[1] 6 3 2
+
+
